@@ -33,3 +33,5 @@
 `heterogeneous list:` a hlist is either the empty list HNil, or a pair ::[H, T] such that H is some arbitrary type and T is a HList
 
 - there is an advantage to keeping our representation types separate from the semantic types used in our applicatoin. The HList provides us with this representation
+
+`coproduct or categorical sum:` is a construction which includes the disjoint union of sets and topological spaces, the free product of hroups and the direct sum of modules and vector spaces. the coproduct of a family of object is essentially the least specific object, which each object in the family admits a morphism

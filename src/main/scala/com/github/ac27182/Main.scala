@@ -32,54 +32,7 @@ object M1 {
 
 }
 
-object M2 {
-  object S1 {}
-  object S2 {
-    import shapeless.{HList, ::, HNil, Generic}
-
-    val product: String :: Int :: Boolean :: HNil =
-      "sunday" :: 1 :: false :: HNil
-
-    val e0: String =
-      product.head
-
-    val e1: Int =
-      product.tail.head
-
-    val e2: Boolean :: HNil =
-      product.tail.tail
-
-    val newProduct: Long :: String :: Int :: Boolean :: HNil =
-      69L :: product
-
-    // switching representations using generic
-    case class IceCream(name: String, numCherries: Int, inCone: Boolean)
-    case class Employee(name: String, number: Int, manager: Boolean)
-
-    val iceCreamGen: Generic[IceCream] {
-      type Repr = String :: Int :: Boolean :: shapeless.HNil
-    } =
-      Generic[IceCream]
-
-    // has a to and from method to convert to and from a generic type
-
-    val iceCream0: IceCream =
-      IceCream("sundae", 1, false)
-
-    val repr: String :: Int :: Boolean :: HNil =
-      iceCreamGen.to(iceCream0)
-
-    val iceCream1: IceCream =
-      iceCreamGen.from(repr)
-
-    val employee: Employee =
-      Generic[Employee].from(Generic[IceCream].to(iceCream0))
-  }
-
-  object S3 {
-    //generic coproducts
-    import shapeless.{Coproduct, :+:, CNil, Inl, Inr}
-  }
-
-  object S4 {}
-}
+object M4 {}
+object M5 {}
+object M6 {}
+object M7 {}
