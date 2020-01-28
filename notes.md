@@ -35,3 +35,9 @@
 - there is an advantage to keeping our representation types separate from the semantic types used in our applicatoin. The HList provides us with this representation
 
 `coproduct or categorical sum:` is a construction which includes the disjoint union of sets and topological spaces, the free product of hroups and the direct sum of modules and vector spaces. the coproduct of a family of object is essentially the least specific object, which each object in the family admits a morphism
+
+- `given a type A and a HList of type R, an implicit Generic to map A to R and a CsvEncoder for R, create a CsvEncoder for A`
+
+- the compiler uses heuristics to determine whether it is converging on a solution. If the heuristics dont yield favourable results for a particular branch of search, the compiler assumes the branch is not converging and moves on to another branch
+
+- chapter 3 sumary...
