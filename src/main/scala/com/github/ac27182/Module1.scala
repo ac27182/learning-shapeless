@@ -1,10 +1,7 @@
 package com.github.ac27182
-object Main extends App {
-  println(">application operational")
-}
 
-object M1 {
-  object S1 {
+package object Module1 {
+  object Section1 {
     import shapeless.{Generic, ::, HNil}
     // both case classes represent different kinds of data, but they have clear similaries
     case class Employee(name: String, number: Int, manager: Boolean)
@@ -31,8 +28,3 @@ object M1 {
   }
 
 }
-
-object M4 {}
-object M5 {}
-object M6 {}
-object M7 {}

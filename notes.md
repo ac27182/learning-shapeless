@@ -40,4 +40,4 @@
 
 - the compiler uses heuristics to determine whether it is converging on a solution. If the heuristics dont yield favourable results for a particular branch of search, the compiler assumes the branch is not converging and moves on to another branch
 
-- chapter 3 sumary...
+- chapter 3 sumary... page 41

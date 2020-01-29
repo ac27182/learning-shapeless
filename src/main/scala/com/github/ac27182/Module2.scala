@@ -1,6 +1,6 @@
 package com.github.ac27182
 
-object Module2 {
+package object Module2 {
   object Section2 {
     import shapeless.{HList, ::, HNil, Generic}
 

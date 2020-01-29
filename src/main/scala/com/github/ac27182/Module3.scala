@@ -1,6 +1,6 @@
 package com.github.ac27182
 
-object Module3 {
+package object Module3 {
   object Section1 {
     // type class recapping
 
