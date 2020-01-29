@@ -40,4 +40,6 @@
 
 - the compiler uses heuristics to determine whether it is converging on a solution. If the heuristics dont yield favourable results for a particular branch of search, the compiler assumes the branch is not converging and moves on to another branch
 
-- chapter 3 sumary... page 41
+- we've covered Generics, HLists, Coproducts to automatically derive type class instances
+
+- we covered lazy types as a means of handling complex, recursive types
