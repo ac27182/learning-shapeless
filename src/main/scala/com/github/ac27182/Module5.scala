@@ -1,3 +1,6 @@
 package com.github.ac27182
 
-package object Module5 {}
+// Accessing names during implicit derivation
+package object Module5 {
+  object Section1 {}
+}

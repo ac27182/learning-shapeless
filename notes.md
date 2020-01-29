@@ -43,3 +43,9 @@
 - we've covered Generics, HLists, Coproducts to automatically derive type class instances
 
 - we covered lazy types as a means of handling complex, recursive types
+
+- by encoding all the free variables as type parameters , we `enable the compiler` to unify them with appropriate types
+
+- when coding with shapeless, we are often trying to find a target type that depends on values in our code. This relationship is called `dependent typing`
+
+- when we find a useful chain of dependently typed operations we can capture them as a single typeclass. This is sometimes called the lemma pattern

@@ -63,6 +63,34 @@ package object Module4 {
     val e4 = implicitly[Last[String :: Int :: HNil]]
     val e5 = Last[String :: Int :: HNil]
     val e6 = the[Last[String :: Int :: HNil]]
+  }
+
+  object Section3 {
+    // chaining dependent functions
+    import shapeless.{Generic, HList, HNil, ::}
+    import shapeless.ops.hlist.{Last, IsHCons}
+    import Section1._
+
+    //Repr <: HList declares that a type variable Repr refers to a subtype of HList
+    def lastField[A, Repr <: HList](input: A)(
+        implicit
+        gen: Generic.Aux[A, Repr],
+        last: Last[Repr]
+    ): last.Out = last.apply(gen.to(input))
+
+    val e0 = lastField(Rect(Vec(1, 2), Vec(3, 4)))
+
+    def getWrappedValue[A, Repr <: HList, Head, Tail <: HList](input: A)(
+        implicit
+        gen: Generic.Aux[A, Repr],
+        isHCons: IsHCons.Aux[Repr, Head, HNil]
+    ): Head = gen.to(input).head
+    case class Wrapper(value: Int)
+
+    // find a generic with a suitable Repr for A
+    // provide the Repr that has a head type H
+
+    val e1 = getWrappedValue(Wrapper(42))
 
   }
 }
