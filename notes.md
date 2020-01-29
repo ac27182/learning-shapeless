@@ -49,3 +49,14 @@
 - when coding with shapeless, we are often trying to find a target type that depends on values in our code. This relationship is called `dependent typing`
 
 - when we find a useful chain of dependently typed operations we can capture them as a single typeclass. This is sometimes called the lemma pattern
+
+- literal types
+- singleton types
+- phantom types
+- type tagging
+
+- scala 2.13.0 gained literal types, otherwise we would need the -Yliteral-types compiler plugin
+
+- shapeless uses literal types to model the names of fields in case classes, it does this by tagging the types of the fields
+
+- we can actually modify the type of number at compile time wiwthout modifying its runtime behavior by tagging it with a phantom type
