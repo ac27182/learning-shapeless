@@ -60,3 +60,7 @@
 - shapeless uses literal types to model the names of fields in case classes, it does this by tagging the types of the fields
 
 - we can actually modify the type of number at compile time wiwthout modifying its runtime behavior by tagging it with a phantom type
+
+- each shapeless op comes in two parts, a type class that we can use during implicit resolution, and extension methods that we can call on HList and Coproduct
+
+- module 7 on page 91

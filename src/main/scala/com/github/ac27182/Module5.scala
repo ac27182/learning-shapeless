@@ -5,13 +5,13 @@ package object Module5 {
 
   import shapeless.Lazy
   object Section1 {
-    // litteral types
-    object Foo
-    val e = Foo
+    // literal types
+    // object Foo
+    // val e = Foo
 
-    import shapeless.syntax.singleton._
+    // import shapeless.syntax.singleton._
 
-    var x = 42.narrow
+    // var x = 42.narrow
     // x = 69 throws a compiler error because narrow converted 42 into a singleton types
 
   }
