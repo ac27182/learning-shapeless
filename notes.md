@@ -68,3 +68,9 @@
 - `polymorphic map`
 
 - eliding
+
+- church encoding
+
+- sclacheck provides built in instances of arbitrary, for a wide range of standard scala types, however creating instances of arbitrary for use algebreic data types is timeconsuming and manual, integrations like sscalacheck shapeless are indispensible
+
+*
