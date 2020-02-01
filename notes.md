@@ -63,4 +63,8 @@
 
 - each shapeless op comes in two parts, a type class that we can use during implicit resolution, and extension methods that we can call on HList and Coproduct
 
-- module 7 on page 91
+- `monomorphic map`
+
+- `polymorphic map`
+
+- eliding
